@@ -2,6 +2,17 @@
 
 快速创建一个 react 组件仓库模版
 
+# Todo
+
+1. `storybook` 不支持 `less` 或者 `sass`
+2. 安装`@rollup/plugin-typescript` 插件时需要额外安装 `tslib`
+3. 状态 `jest` 时，需要额外安装 `react-dom`，因为需要使用其中的 `test-utils` 工具
+4. 执行 `jest` 命令时，报错 `jsdom` 环境不存在，需要额外安装 `jest-environment-jsdom`
+5. 安装 `rollup-plugin-postcss` 插件时，注意安装 `postcss`
+6. 定义 `rollup.config.js` 有问题，后缀需要改成 `mjs，不然执行` `rollup` 构建命令会报错，只会接受 `commonjs` 规范的配置文件
+7. `rollup-plugin-peer-deps-external` 创建应该没生效，后续处理下
+8. 发包之后，注意增加一个`.npmr` 隐藏文件，加入：`registry=https://registry.npmjs.org/`
+
 ## Available Scripts
 
 ### Build the library
